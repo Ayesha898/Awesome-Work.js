@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Legs Counting</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+     <div class="bg">
+        <div class="row">
+            <div class="col-4">
+                <label for="Chickens" class="label"><b>Chickens:</b></label>
+                <input type="text" placeholder="Enter Number of Chickens..." class="input" id="inputChicken">
+                <!-- Correct the onclick attribute to call the function -->
+                <button onclick="findAnimalLegs()" class="Submit">Submit</button>
+             </div>
+            
+            <div class="col-4">
+                <label for="Cows" class="label"><b>Cows:</b></label>
+                <input type="text" placeholder="Enter Number of Cows..." class="input" id="inputCow">
+            </div>
+            
+            <div class="col-4">
+                <label for="Pigs" class="label"><b>Pigs:</b></label>
+                <input type="text" placeholder="Enter Number of Pigs..." class="input" id="inputPig">
+            </div>
+        </div>
+     </div>
+
+     <div class="findAnimalLegs">
+        <div class="row">
+            <div class="col-4">
+                <!-- Correct the onclick attribute to call a function -->
+                <button onclick="tryAnotherOne()" class="last">Try Another One</button>
+            </div>
+            <div class="col-8">
+                <div class="meta">
+                    <b>Total Chickens: <span id="totalChickens"></span></b>
+                        <b  class="ml-5">Total Legs: <span id="counterChicken"></span></b>
+                    <br>
+                    <b>Total Cows: <span id="totalCows"></span> </b>
+                    <b class="ml-5">Total Legs: <span id="counterCow"></span></b>
+                    <br>
+                    <b>Total Pigs: <span id="totalPigs"></span> </b>
+                    <b  class="ml-5">Total Legs:<span id="counterPig"></span></b>
+                    <br>
+                    <br>
+                    <b> <span id="totalLegs"></span></b>
+                </div>
+            </div>
+        </div>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
